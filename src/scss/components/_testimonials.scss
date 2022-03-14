@@ -1,0 +1,18 @@
+// **************************************
+// TESTIMONIAL STYLES
+// **************************************
+@use "../utilities" as *;
+
+.testimonial {
+  background-color: $color-main;
+  color: $color-text-light;
+  border-radius: 15px;
+  margin: px-to-rems(20px) 0;
+  padding: px-to-rems(25px);
+  &__container {
+    padding-left: px-to-rems(20px);
+  }
+  &__header {
+    padding-bottom: px-to-rems(15px);
+  }
+}

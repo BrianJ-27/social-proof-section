@@ -1,0 +1,11 @@
+// **************************************
+// IMAGE STYLES
+// **************************************
+@use "../utilities" as *;
+
+.img {
+  &__person {
+    @extend %img-properties;
+    @include roundy($dim: 50px, $border: 1px solid $color-border-dark);
+  }
+}

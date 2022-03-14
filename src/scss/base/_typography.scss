@@ -1,0 +1,80 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+@use "../utilities" as *;
+
+.title__primary,
+.title__secondary {
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+//h1 styles
+.title__primary {
+  @extend %text-modules;
+  @extend %ctr-txt;
+  @include text-prop(
+    $size: clamp(2.5rem, 6vw, 3.5rem),
+    $f-weight: $font-weight-bold,
+    $color: $color-text-dark,
+    $l-height: 1
+  );
+  padding: px-to-rems(50px) 0px px-to-rems(20px);
+}
+
+//h2 styles
+.title__secondary {
+  @extend %text-modules;
+  @extend %ctr-txt;
+  @include text-prop(
+    $size: clamp(0.9rem, 0.8vw, 1.5rem),
+    $color: $color-text-base,
+    $l-height: 1.6
+  );
+  padding-bottom: px-to-rems(20px);
+}
+
+.title__terciary {
+  @include text-prop(
+    $size: clamp(0.9rem, 1vw, 2rem),
+    $f-weight: $font-weight-bold,
+    $color: $color-text-light,
+    $l-height: 1.4
+  );
+}
+
+.title__quaternary {
+  @include text-prop(
+    $size: clamp(0.9rem, 1vw, 2rem),
+    $color: $color-text-accent,
+    $f-weight: $font-weight-normal,
+    $l-height: 1.4
+  );
+}
+
+/*----CONTENT STYLES----*/
+
+.content {
+  @include text-prop(
+    $size: clamp(0.7rem, 0.85vw, 0.8rem),
+    $f-weight: $font-weight-normal,
+    $color: $color-text-light,
+    $l-height: 1.8
+  );
+  &__ratings {
+    @extend %ctr-txt;
+    border-radius: 8px;
+    background-color: $color-secondary;
+    @include text-prop(
+      $size: clamp(0.8rem, 0.9vw, 2rem),
+      $f-weight: $font-weight-bold,
+      $color: $color-text-dark
+    );
+    margin-bottom: px-to-rems(15px);
+    padding: px-to-rems(10px) px-to-rems(20px);
+    @include mq("md") {
+      padding: px-to-rems(15px) px-to-rems(30px);
+    }
+  }
+}

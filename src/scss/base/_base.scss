@@ -1,0 +1,53 @@
+// **************************************
+// BASE STYLES
+// **************************************
+
+@use "../utilities" as *;
+
+/*-----BASE GLOBAL STYLES------*/
+* {
+  box-sizing: border-box;
+  // background: #000 !important;
+  // color: #0f0 !important;
+  // outline: solid #f00 1px !important;
+}
+
+html {
+  font-size: px-to-rems(15px);
+}
+
+html,
+body {
+  @extend %body-properties;
+}
+
+body {
+  background-color: $color-bg;
+  @include flex_me($dir: column);
+  margin: 1rem auto;
+}
+
+footer {
+  @extend %ctr-txt;
+}
+
+p {
+  @extend %text-modules;
+}
+
+a {
+  @extend %link-properties;
+  color: $color-text-dark;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*-----HEADINGS------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-secondary;
+}

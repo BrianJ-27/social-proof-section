@@ -1,0 +1,61 @@
+// **************************************
+// Placeholders
+// **************************************
+@use "./variables" as v;
+
+// Global Body Tag Styles
+%body-properties {
+  font-family: v.$font-stack-main;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+// Center Grid Content (For Component projects)
+%ctr-grid-content {
+  display: grid;
+  place-items: center;
+}
+
+// Global Heading & Paragraph Styles
+%text-modules {
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+}
+
+// Global Image Style
+%img-properties {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Global Button Styles
+%btn-properties {
+  outline: none;
+  border: 2px solid v.$color-main;
+  border-radius: 5px;
+  color: v.$white;
+  letter-spacing: 1px;
+  background: v.$color-main;
+  font-weight: 600;
+}
+
+// Global Link Styles
+%link-properties {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/******************************************
+REUSEABLE SINGLE STYLES
+******************************************/
+
+// ul Style
+%ul-list-stle {
+  list-style-type: none;
+}
+
+// center text style
+%ctr-txt {
+  text-align: center;
+}
