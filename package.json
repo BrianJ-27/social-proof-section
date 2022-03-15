@@ -7,11 +7,12 @@
   "scripts": {
     "build:sass": "sass  --no-source-map src/scss:public/css",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
+    "copy:css": "copyfiles -u 1 ./src/css/*.css ./",
     "copy:html": "copyfiles -u 1 ./src/*.html ./",
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange \"/src/assets/**/*\" -- npm run copy:assets",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
-    "watch:sass": "sass  --no-source-map --watch ./src/scss:public/css",
+    "watch:sass": "sass  --no-source-map --watch ./src/scss:./css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
