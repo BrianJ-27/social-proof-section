@@ -5,12 +5,6 @@
 /*------GRID LAYOUT STYLES-----------*/
 .grid__container {
   @include grid_layout_container($grid-temp-col: 100%, $grid-temp-row: auto);
-  @include mq("md") {
-    @include grid_layout_container(
-      $grid-temp-col: 40% 60%,
-      $grid-temp-row: 50% 250px
-    );
-  }
 }
 // Grid Area Items
 header {
@@ -23,12 +17,4 @@ article {
 
 aside {
   grid-area: aside;
-}
-
-//Main Content Grid Layout
-.main__grid--wrapper {
-  @include mq("md") {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
 }

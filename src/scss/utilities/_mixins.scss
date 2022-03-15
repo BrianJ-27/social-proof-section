@@ -54,9 +54,9 @@ Important reminders:
     "header"
     "aside"
     "article";
-  @include mq("md") {
-    grid-template-columns: $grid-temp-col;
-    grid-template-rows: $grid-temp-row;
+  @include mq("lg") {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 250px;
     grid-template-areas:
       "header aside aside"
       "article article article"
