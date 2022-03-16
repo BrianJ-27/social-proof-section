@@ -2,7 +2,7 @@
 // IMAGE STYLES
 // **************************************
 @use "../utilities" as *;
-
+/*------IMAGE STYLES-----------*/
 .img {
   &__person {
     @extend %img-properties;

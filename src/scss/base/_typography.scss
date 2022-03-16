@@ -2,14 +2,13 @@
 // TYPOGRAPHY STYLES
 // **************************************
 @use "../utilities" as *;
-
+/*------HEADING STYLES-----------*/
 .title__primary,
 .title__secondary {
   @include mq("md") {
     text-align: left;
   }
 }
-
 //h1 styles
 .title__primary {
   @extend %text-modules;
@@ -34,7 +33,7 @@
   );
   padding-bottom: px-to-rems(20px);
 }
-
+//h3 styles
 .title__terciary {
   @include text-prop(
     $size: clamp(0.9rem, 1vw, 2rem),
@@ -43,7 +42,7 @@
     $l-height: 1.4
   );
 }
-
+//h4 styles
 .title__quaternary {
   @include text-prop(
     $size: clamp(0.9rem, 1vw, 2rem),
@@ -54,7 +53,7 @@
 }
 
 /*----CONTENT STYLES----*/
-
+// p styles
 .content {
   @include text-prop(
     $size: clamp(0.7rem, 0.85vw, 0.8rem),
