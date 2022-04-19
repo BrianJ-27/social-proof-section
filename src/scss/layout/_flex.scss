@@ -38,7 +38,7 @@
 
   &--ratings {
     width: 100%;
-    @include mq("md") {
+    @include mq("lg") {
       @include flex_me($dir: row, $just: space-around);
     }
     @include mq("lg") {

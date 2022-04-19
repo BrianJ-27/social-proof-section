@@ -443,9 +443,6 @@ html {
 
 body {
   background: url(../assets/images/bg-pattern-top-mobile.svg) no-repeat top 0px left 0px, url(../assets/images/bg-pattern-bottom-mobile.svg) no-repeat bottom 0px right 0px, white;
-  display: grid;
-  display: flex;
-  flex-direction: column;
   margin: 1rem auto;
 }
 @media (min-width: 1024px) {
@@ -602,7 +599,7 @@ aside {
 .flex__container--ratings {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .flex__container--ratings {
     display: flex;
     flex-direction: row;

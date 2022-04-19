@@ -27,8 +27,6 @@ body {
     url(../assets/images/bg-pattern-bottom-mobile.svg) no-repeat bottom 0px
       right 0px,
     $color-bg;
-  display: grid;
-  @include flex_me($dir: column);
   margin: 1rem auto;
   @include mq("lg") {
     background: url(../assets/images/bg-pattern-top-desktop.svg) no-repeat top
